@@ -1,0 +1,161 @@
+/* Animaciones individuales */
+    .mover {
+        width: 10px;
+        height: 10px;
+        margin-bottom: 100px;
+        animation: moverAnim 3s infinite ease-in-out;
+    }
+    .mover img{
+        width: 150px;
+        height: 150px;
+    }
+    .escalar {
+        color: white;
+        text-align: center;
+        margin-bottom: 10px;
+        animation: escalarAnim 3s infinite ease-in-out;
+    }
+    .escalar img{
+        width: 150px;
+        height: 150px;
+    }
+    .rotar {
+        width: 100px;
+        height: 100px;
+        color: white;
+        text-align: center;
+        margin-bottom: 10px;
+        animation: rotarAnim 3s infinite linear;
+        padding: 50px;
+    }
+    .rotar img{
+        width: 120px;
+        height: 120px;
+    }
+ 
+    .color {
+        width: 300px;
+        height: 300px;
+        background-color: crimson;
+        color: white;
+        text-align: center;
+        margin-bottom: 10px;
+        animation: colorAnim 3s infinite ease-in-out;
+    }
+
+    .color img{
+        width: 200px;
+        height: 200px;
+        padding: 50px;
+    }
+ 
+    /* Keyframes */
+    @keyframes moverAnim {
+        0% {
+            transform: translateX(0);
+        }
+ 
+        100% {
+            transform: translateX(500px);
+        }
+    }
+ 
+    @keyframes escalarAnim {
+        0% {
+            transform: scale(1);
+        }
+ 
+        100% {
+            transform: scale(1.5);
+        }
+    }
+ 
+    @keyframes rotarAnim {
+        0% {
+            transform: rotate(0deg);
+        }
+ 
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+ 
+    @keyframes colorAnim {
+        0% {
+            background-color: rgb(255, 255, 255);
+        }
+
+        50% {
+            background-color: crimson;
+        }
+ 
+        100% {
+            background-color: rgb(249, 165, 8);
+        }
+    }
+    .block {
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            margin: 5px;
+            display: block;/*Posición haciendo salto de línea*/
+            width: 200px;
+            height: 250px;
+    }
+    .block img {
+        width: 150px;
+        height: 200px;
+    }
+    .inline {
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            margin: 5px;
+            display: inline;
+        }
+    .inline img {
+        width: 200px;
+        height: 250px;
+    }
+ 
+    .inline-block {
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            margin: 5px;
+            display: inline-block;
+            width: 200px;
+            height: 250px;
+    }
+    .inline-block img {
+        width: 200px;
+        height: 250px;
+    }
+
+ 
+.roja {
+        width: 100px;
+      height: 100px;
+      position: fixed; /* Requisito para z-index */
+      top: 20px;
+      left: 1200px;
+      z-index: 0;
+    }
+ 
+.roja img{
+    width: 100px;
+    height: 100px;
+}
+
+.azul {
+        width: 100px;
+      height: 100px;
+      position: fixed;
+      top: 50px;
+      left: 1240px;
+      z-index: 1;
+    }
+
+.azul img {
+    width: 100px;
+    height: 100px;
+}
+
+    
